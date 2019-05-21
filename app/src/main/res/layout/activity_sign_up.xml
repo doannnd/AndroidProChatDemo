@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/signup_editLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_username"
+            android:text="doannd"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_username">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/signup_editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:text="12345678"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_password"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signup_btnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/signup_btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:text="@string/cancel"
+            android:textColor="@android:color/black"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</RelativeLayout>
