@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidProChatDemo</string>
+    <string name="message_image">message image</string>
+    <string name="enter_your_username">Username</string>
+    <string name="enter_your_password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
